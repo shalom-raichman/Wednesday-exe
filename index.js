@@ -35,27 +35,22 @@ const capitalizeFirstLetter = (str) => {
 // object of tasks
 const tasks = [
     {
-    task1: {
-      id: '1',  // Unique ID
+      id: 1,  // Unique ID
       details: 'Complete the project report',
       time: '2024-09-11 10:00'
     },
-    task2: {
-      id: '2',  // Unique ID
+    {
+      id: 2,  // Unique ID
       details: 'Attend the team meeting',
       time: '2024-09-11 14:00'
     },
-    task3: {
-      id: '3',  // Unique ID
+    {
+      id: 3,  // Unique ID
       details: 'Submit code review',
       time: '2024-09-11 16:00'
     }
-  }
-];
+  ];
 
-console.log(tasks);
-
-  
 
 // exe-4
 const saveTasks = (tasks) => {
@@ -78,4 +73,12 @@ const removeTask = (id) => {
     localStorage.tasks = JSON.stringify(tasks);
 }
 
-saveTasks(tasks);
+const exampleTask = {
+    task1: {
+      id: '1',  // Unique ID
+      details: 'Complete the project report',
+      time: '2024-09-11 10:00'
+    }
+}
+
+console.log(addTask());
