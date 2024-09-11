@@ -60,10 +60,10 @@ console.log(tasks);
 // exe-4
 const saveTasks = (tasks) => {
     localStorage.setItem("tasks", JSON.stringify(tasks))
-    // return true
+    return true
 }
 
-const LocalStorage = () => {
+const loadTasks = () => {
     return JSON.parse(localStorage.getItem("tasks")) || []
 }
 
