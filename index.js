@@ -2,12 +2,12 @@ const arr = [4, 5, 8, 9, 2, 2, 6];
 const str = "Shalom i'm grate.";
 
 // exe-1
-const evenUp = (arr) => {
+const filterAndSortEvenNumbers = (arr) => {
     return arr.filter(e => e %2 == 0).sort();
 }
 
 // exe-2
-const noDoual = (arr) => {
+const removeDuplicates = (arr) => {
     const newArr = [];
     for (const el of arr) {
         if (!newArr.includes(el)) {
@@ -18,7 +18,7 @@ const noDoual = (arr) => {
 }
 
 // exe-3
-const uperCase = (str) => {
+const capitalizeFirstLetter = (str) => {
     const strArr = str.split(" ");
     let newStr = ""
     for (let word of strArr) {
@@ -28,6 +28,10 @@ const uperCase = (str) => {
         }
         newStr += word[0].toLocaleUpperCase() + word.slice(1)  + " ";
     }
+    return newStr
 }
 
-uperCase(str)
+// exe-4
+const saveTasks = () => {
+    
+}
